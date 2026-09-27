@@ -1,0 +1,6 @@
+{
+  "name": "VarshaGyan - वर्षा ज्ञान | Panchayat-Level Weather Downscaling",
+  "description": "Block-to-Panchayat Weather Downscaling Engine (SIH26074) combining IMD gridded datasets, Random Forest statistical downscaling, and crowdsourced traditional bio-indicator calibration for hyperlocal agro-meteorological advisories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

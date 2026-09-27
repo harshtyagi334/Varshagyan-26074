@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-marathi: 'Mukta', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --color-slate-indigo: #2C2C2C;
+    --color-terracotta: #D97706;
+    --color-ochre: #2B6CB0;
+    --color-bg: #F6F5F0;
+    --color-card: #FFFFFF;
+    --color-crimson: #B6413A;
+    --color-forest: #3B4840;
+    --color-accent: #657A57;
+  }
+
+  body {
+    font-family: var(--font-marathi);
+    background-color: var(--color-bg);
+    color: var(--color-slate-indigo);
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    min-width: 320px;
+    min-height: 100dvh;
+    overflow-x: clip;
+  }
+
+  #root {
+    min-height: 100dvh;
+    width: 100%;
+    min-width: 0;
+  }
+
+  h1, h2, h3, h4 { letter-spacing: 0; }
+}
+
+/* Organic card & container styling */
+.organic-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(46, 58, 70, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(40, 54, 46, 0.06);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.organic-card:hover {
+  border-color: rgba(46, 90, 61, 0.2);
+  box-shadow: 0 3px 10px rgba(40, 54, 46, 0.08);
+}
+
+.organic-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #E6E8DC;
+}
+::-webkit-scrollbar-thumb {
+  background: #2F463830;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2F463860;
+}
+
+/* Leaflet map popup styling with organic palette */
+.leaflet-popup-content-wrapper {
+  background: #F6F4EC !important;
+  color: #2F4638 !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 12px 30px -6px rgba(46, 58, 70, 0.18) !important;
+  border: 1px solid rgba(200, 122, 83, 0.3) !important;
+  padding: 6px !important;
+}
+.leaflet-popup-tip {
+  background: #F6F4EC !important;
+}
